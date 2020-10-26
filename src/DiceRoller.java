@@ -1,5 +1,5 @@
 public class DiceRoller {
-    
+
     public static int rollDice(int sides) {
         int s1 = (int) Math.floor(Math.random()*sides + 1);
         int s2 = (int) Math.floor(Math.random()*sides + 1);
@@ -17,6 +17,5 @@ public class DiceRoller {
         for(int k=2; k <= 2*sides; k++) {
             System.out.println(k+"\t"+counts[k]);
         }
-        trackRolls();
     }
 }
