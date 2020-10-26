@@ -8,7 +8,7 @@ public class DiceRoller {
 
     public static void main(String[] args) {
         int sides = 6;
-        int counts[] = new int[2*sides + 1];
+        int[] counts = new int[2*sides + 1];
         int rolls = 1000;
         for(int k=0; k < rolls; k++) {
             int roll = rollDice(sides);
