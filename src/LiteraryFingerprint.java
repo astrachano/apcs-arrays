@@ -4,7 +4,8 @@ import java.io.*;
 public class LiteraryFingerprint {
     private static int MAX_LENGTH = 20;
 
-    public String[] readFile(String fname) throws FileNotFoundException {
+    public String[] readFile(String fname)
+            throws FileNotFoundException {
         Scanner scan = new Scanner(new File(fname));
         scan.useDelimiter("\\Z");
         String s = scan.next();
@@ -12,6 +13,7 @@ public class LiteraryFingerprint {
         s = s.replaceAll("\\p{Punct}", "");
         return s.toLowerCase().split(" ");
     }
+
     public int[] getLengths(String[] words) {
         int[] counts = new int[MAX_LENGTH];
         for(String s : words) {
